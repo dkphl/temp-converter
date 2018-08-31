@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+a {
+  /*text-decoration: none;*/
+  color: #eee;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -17,9 +26,11 @@ body {
   color: #fff;
 }
 
+
+
 .container {
   margin: auto;
-  /*max-width: 960px;*/
+  max-width: 960px;
   padding: 0 1rem 0 1rem;
   text-align: center;
   display: flex;
@@ -60,7 +71,8 @@ body {
 
 .header-content h1 {
   font-family: 'Heebo', serif;
-  font-size: 9.5rem;
+  /*font-size: 9.5rem;*/
+  font-size: calc(42px + (160 - 42) * ((100vw - 320px) / (1600 - 300)));
   line-height: 1;
   margin: 0;
 }  
@@ -96,6 +108,10 @@ body {
   display: inline-block;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 label {
   display: block;
   font-size: 1.25rem;
@@ -105,4 +121,35 @@ label {
   .container {
     padding: 0 3rem 0 3rem;
   }
+}
+
+@media (max-width: 800px) {
+.v-header {
+  display: inline-block;
+  color: #fff;
+}
+.container {
+  margin: auto;
+  /*max-width: 960px;*/
+  padding: 0 1rem 0 1rem;
+  text-align: center;
+  display: grid;
+}
+
+.temp-inputs input {
+  height: 2rem;
+  font-size: 1rem;
+  width: 80px;
+  margin: 4px;
+  text-align: center;
+  font-family: 'Heebo', serif;
+  background: rgba(0, 0, 0, .10);
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#svg-icon {
+  height: 40px;
+}
 }
