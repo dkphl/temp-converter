@@ -30,7 +30,7 @@ body {
 
 .container {
   margin: auto;
-  max-width: 960px;
+  max-width: 1200px;
   padding: 0 1rem 0 1rem;
   text-align: center;
   display: flex;
