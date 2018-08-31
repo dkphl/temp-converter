@@ -12,24 +12,28 @@
       <video src="1293.mov" autoplay="true" loop="true" muted> </video>
     </div>
     <div class="header-overlay"></div>
-    
-    <div class="header-content">
-      <h1>Let's Convert Some Shit!</h1>
-      <div class="temp-inputs">
+    <div class="temp-inputs">
         <div class="field-group">
           <label for="input-fahr">Fahrenheit</label>
-          <input type="number" id="input-fahr" class="temp-input" placeholder="F">
+          <input type="number" id="input-fahr" placeholder="F">
+          <p class="errors">Numbers only please!</p>
         </div>
+        <img src="arrows.svg" height="80px">
         <div class="field-group">
           <label for="input-celc">Celcius</label>
-          <input type="number" id="input-celc" class="temp-input" placeholder="C">
+          <input type="number" id="input-celc" placeholder="C">
+          <p class="errors">Numbers only please!</p>
         </div>
       </div>
-      <p class="errors">Numbers only please!</p>
+    <div class="header-content">
+      
+      <h1>Let's Convert Some Shit!</h1>
+      <span class="glyphicons glyphicons-temperature-settings"></span>
+      
     </div>
 
 
   </header> 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
