@@ -4,8 +4,6 @@ const celciusInput = document.querySelector("#input-celc");
 const convert = {
   celciusToF: function (celc) {
     let fahrenheit =  celc * 1.8 + 32;
-    console.log(typeof fahrenheit.toFixed(1));
-    
     return fahrenheit.toFixed(1);
 
   },
